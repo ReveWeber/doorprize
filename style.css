@@ -1,0 +1,109 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+.form-area {
+    width: 500px;
+    margin: 72px auto;
+    padding: 18px;
+    position: relative;
+    font-size: 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.InputAddOn {
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.InputAddOn-field {
+    flex: 1;
+    background: white;
+}
+
+.InputAddOn-item {
+    padding-right: 6px;
+}
+
+.cell-note {
+    font-size: 80%;
+    text-align: center;
+    width: 100%;
+    margin-top: -1em;
+}
+
+button, .button {
+    font-weight: bold;
+    border-radius: 18px;
+    width: 175px;
+    background: #fec10e;
+    font-size: 100%;
+}
+
+button {
+    margin: 27px auto 27px 32.5%;
+}
+
+.disclaimer {
+    margin-top: 18px;
+    font-size: 80%;
+    margin-bottom: 27px;
+}
+
+.subhead {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.top-right {
+    transform: rotate(180deg);
+    position: absolute;
+    top: -50px;
+    right: 18px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: -50px;
+    left: 18px;
+}
+
+.winner {
+    margin: 18px;
+}
+
+.draw-button {
+    float: left;
+    clear: left;
+}
+
+.list-button {
+    float: right;
+    clear: right;
+}
+
+.thanks {
+    margin-top: 36px;
+    padding-top: 36px;
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+}
+    

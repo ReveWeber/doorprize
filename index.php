@@ -15,7 +15,6 @@ if (isset($_POST['email'])) {
         <meta charset="utf-8">
         <link href="style.css" type="text/css" rel="stylesheet">
         <script src="includes/jquery-1.11.3.min.js"></script>
-        <script src="includes/functions.js"></script>
         <title>Aquilino Arts at the Boston Small Business Expo 2015
         </title>
     </head>
@@ -26,9 +25,14 @@ if (isset($_POST['email'])) {
         <div class="form-area" id="form-area">
             <h2>Enter our device charger drawing!</h2>
             <div id="form-itself">
-                <?php if (isset($message)) {
-                echo '<h2 class="thanks">'.$message.'</h2>';
-            } else {
+                <?php if (isset($message)) {?>
+                <h2 class="thanks"><?php echo $message; ?></h2>
+                <script>
+                   setTimeout(function () {
+                      $('#form-itself').load('entry-form.html');
+                   }, 2500);
+                </script>
+            <?php } else {
                 include('entry-form.html');
             } ?>
             </div>
